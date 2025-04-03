@@ -1,78 +1,74 @@
-/* Estilos globales */
+/* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff3e6;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
     margin: 0;
     padding: 0;
 }
 
-/* Encabezado */
-header {
-    background-color: #ff8c00;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    margin: 0;
-}
-
-/* Barra de navegación */
+/* Navbar */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #ffb84d;
-    padding: 10px;
+    background-color: #3182ce; /* Azul oscuro */
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
     text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #ff8c00;
-    color: white;
+    color: #edf2f7;
+    transition: color 0.3s;
 }
 
-/* Contenedor de productos (jugos) */
-.container {
-    padding: 20px;
+nav .menu-btn {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav .menu ul {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
-/* Jugo individual */
-.jugo {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    width: 200px;
-    padding: 15px;
+nav .menu ul li {
+    margin: 0 15px;
+}
+
+/* Menú desplegable en móviles */
+#mobile-menu {
+    display: none;
+    background-color: #3182ce;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
 }
 
-.jugo img {
-    max-width: 100%;
-    height: auto;
+#mobile-menu li {
+    padding: 10px 0;
 }
 
-/* Pie de página */
-footer {
-    background-color: #ff8c00;
+#mobile-menu li a {
     color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-decoration: none;
+}
+
+/* Carrusel */
+.carousel {
+    margin-top: 48px;
+    position: relative;
+}
+
+.carousel-container {
+
+    display: flex;
+    overflow: hidden;
 }
